@@ -4,7 +4,7 @@
 Szablon radia internetowego z dwoma kanałami. 
 
 
-![Screenshot](https://tuxinfo.pl/demo/2radia/GRAFIKI/screenshot.png)
+![Screenshot](https://github.com/drkosti/2radia/blob/main/GRAFIKI/sceenshot.png)
 
 
 ## Licencja
