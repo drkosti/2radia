@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.playery {
+  height: 100vh;
+  color: white;
+  background-image: url("../GRAFIKI/tlo1.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nazwa-top {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+.slogan-top {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+}
+
+.lewa {
+  background-color: rgba(137, 43, 226, 0.543);
+}
+
+.prawa {
+  background-color: rgba(0, 0, 0, 0.543);
+}
+.lewa,
+.prawa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lewa,
+.prawa {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+}
+
+.prawa {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.kanal1 {
+  background-color: rgba(28, 28, 28, 0.8);
+  color: #ffffff;
+}
+
+.prezenter,
+.audycja {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.btn-group {
+  padding: 20px 0px 0px 0px;
+}
+
+.player-container {
+  text-align: center;
+}
+.player-button {
+  font-size: 6rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.player-button:hover {
+  color: #939393;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7), -2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.volume-control {
+  gap: 10px;
+}
+
+.volume-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 150px;
+  height: 8px;
+  background: linear-gradient(90deg, #808080 0%, #ccc 100%);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #808080;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background-color: #666;
+}
+
+.volume-control input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #808080;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.volume-control input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  background-color: #666;
+}
+
+.volume-control input[type="range"]:focus {
+  outline: none;
+}
+
+.szersze-oc {
+  width: 500px !important;
+}
+
+.info {
+  border: 1px black dotted;
+  padding: 12px;
+  margin: 20px 0px 0px 0px;
+}
+.ytlink {
+  color: #bd0101;
+  font-weight: 300;
+}
+
+#blok1,
+#blok2 {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16pt;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  padding: 20px 0px 30px 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#blok1 {
+  background-image: url("../GRAFIKI/tlo-blok1.webp");
+  color: White;
+}
+#blok2 {
+  background-image: url("../GRAFIKI/tlo-blok2.webp");
+  color: black;
+}
+#blok1 h2 {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 30px 0px 20px 0px;
+}
+#blok2 h2 {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 30px 0px 20px 0px;
+}
+
+#blok1 h2 .hash,
+#blok2 h2 .hash {
+  color: #939393;
+  margin: 0px 7px 0px 0px;
+}
+
+.aplikacja-container {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background: url("../GRAFIKI/tlo-para.webp") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.aplikacja-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  z-index: 1;
+}
+
+.aplikacja-content img {
+  width: 250px;
+  margin: 0px 5px 15px 0px;
+}
+.aplikacja-content h2 {
+  margin-bottom: 30px;
+}
+
+.aplikacja-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(to top, #868686, #bdbdbd);
+  min-height: 100px;
+  display: block;
+  color: black;
+  font-size: 12pt;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+footer a {
+  color: #373737;
+  text-decoration: none;
+}
+@media only screen and (max-width: 576px) {
+  .prawa {
+    background-image: url("../GRAFIKI/tlo2.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .volume-control {
+    display: none;
+  }
+
+  .player-button {
+    font-size: 11rem;
+  }
+  .text-block {
+    height: 120px;
+  }
+  .offcanvas {
+    width: 100% !important;
+  }
+  #blok1 {
+    margin-top: 100vh;
+  }
+  .player-container {
+    padding: 40px 0px 0px 0px;
+  }
+}
